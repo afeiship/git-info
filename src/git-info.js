@@ -11,7 +11,7 @@
   }
 
   function currentBranch(){
-    return removeEmpty(EMPTY_STR+exec("git branch | awk '/\*/ { print $2; }'"));
+    return removeEmpty(EMPTY_STR+exec('git branch | grep \*'));
   }
 
   module.exports = {
