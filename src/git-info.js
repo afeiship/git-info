@@ -10,8 +10,13 @@
     return removeEmpty(EMPTY_STR+exec('git branch'));
   }
 
+  function currentBranch(){
+    return removeEmpty(EMPTY_STR+exec("git branch | awk '/\*/ { print $2; }'"));
+  }
+
   module.exports = {
-    branch: branch
+    branch: branch,
+    currentBranch: currentBranch
   };
 
 }());
