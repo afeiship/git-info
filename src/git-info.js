@@ -18,9 +18,14 @@
     return removeEmpty(EMPTY_STR + exec('git branch | grep \\\*'));
   }
 
+  function hash(){
+    return removeEmpty( EMPTY_STR + exec('git rev-parse --verify HEAD'))
+  }
+
   module.exports = {
     branch: branch,
-    currentBranch: currentBranch
+    currentBranch: currentBranch,
+    hash: hash
   };
 
 }());

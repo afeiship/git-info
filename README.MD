@@ -9,5 +9,11 @@ var branch = require('git-info').branch;
 //branch();
 ```
 
+## get current brach:
+```bash
+# git rev-parse --abbrev-ref HEAD
+# git branch | grep '*'
+```
+
 ## resources:
 + https://github.com/pirelenito/git-revision-webpack-plugin
