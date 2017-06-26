@@ -6,10 +6,8 @@
     return exec('git brach');
   }
 
-  if (typeof module !== 'undefined' && module.exports) {
-    module.exports = {
-      branch:branch
-    };
-  }
+  module.exports = {
+    branch:branch
+  };
 
 }());
