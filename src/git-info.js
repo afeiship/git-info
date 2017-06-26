@@ -7,7 +7,7 @@
 
 
   var removeEmpty = function (inString) {
-    return inString.replace(/[\s\r\n]+$/, EMPTY_STR);
+    return inString.replace(spaceRE, EMPTY_STR);
   };
 
   function branch() {
@@ -15,7 +15,7 @@
   }
 
   function currentBranch(){
-    return removeEmpty(EMPTY_STR + exec('git branch | grep \\\*'));
+    return removeEmpty(EMPTY_STR + exec('git rev-parse --abbrev-ref HEAD'));
   }
 
   function hash(){

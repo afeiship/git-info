@@ -6,6 +6,7 @@
 ```js
 var branch = require('git-info').branch;
 
+//exec('git branch | grep \\\*')
 //branch();
 ```
 
