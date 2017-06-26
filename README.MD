@@ -9,5 +9,5 @@ var branch = require('git-info').branch;
 //branch();
 ```
 
-## todos:
-- [ ] todo list..
+## resources:
++ https://github.com/pirelenito/git-revision-webpack-plugin
