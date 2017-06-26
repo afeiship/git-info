@@ -1,13 +1,17 @@
 (function () {
 
-  var exec = require('child_process').exec;
+  var exec = require('child_process').execSync;
+  var EMPTY_STR = '';
+  var removeEmpty = function (inString) {
+    return inString.replace(/[\s\r\n]+$/, EMPTY_STR);
+  };
 
-  function branch(){
-    return exec('git brach');
+  function branch() {
+    return removeEmpty(EMPTY_STR+exec('git branch'));
   }
 
   module.exports = {
-    branch:branch
+    branch: branch
   };
 
 }());
