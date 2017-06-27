@@ -24,7 +24,8 @@
   module.exports = {
     branch: branch,
     currentBranch: currentBranch,
-    hash: hash
+    hash: hash,
+    exec: execCmd
   };
 
 }());
