@@ -4,13 +4,9 @@
   var spaceRE = /[\s\r\n]+$/;
   var EMPTY_STR = '';
 
-
-  var removeEmpty = function (inString) {
-    return inString.replace(spaceRE, EMPTY_STR);
-  };
-
   var execCmd = function(inCmd){
-    return removeEmpty( EMPTY_STR + exec(inCmd) );
+    var result = EMPTY_STR + exec(inCmd);
+    return result.replace(spaceRE, EMPTY_STR);
   };
 
   function branch() {
