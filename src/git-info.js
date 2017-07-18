@@ -21,10 +21,15 @@
     return execCmd('git rev-parse --verify HEAD');
   }
 
+  function shortHash(){
+    return execCmd('git rev-parse --short HEAD');
+  }
+
   module.exports = {
     branch: branch,
     currentBranch: currentBranch,
     hash: hash,
+    shortHash: shortHash,
     exec: execCmd
   };
 
