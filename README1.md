@@ -4,7 +4,7 @@
 
 ## usage:
 ```js
-var branch = require('git-info').branch;
+var branch = require('@feizheng/git-info').branch;
 
 //exec('git branch | grep \\\*')
 //branch();
