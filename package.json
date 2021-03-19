@@ -1,5 +1,5 @@
 {
-  "name": "@feizheng/git-info",
+  "name": "@jswork/git-info",
   "version": "1.0.0",
   "description": "Get git infomation.",
   "homepage": "https://github.com/afeiship/git-info",
@@ -8,11 +8,16 @@
     "email": "1290657123@qq.com"
   },
   "scripts": {
-    "build": "gulp"
+    "build": "gulp",
+    "release": "release-it"
   },
   "main": "lib/git-info.js",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
-    "@feizheng/rake-git": "^1.2.0"
+    "release-it": "^14.4.1"
   }
 }

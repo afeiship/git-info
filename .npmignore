@@ -5,3 +5,6 @@
 test
 build
 gulpfile.js
+
+.release-it.json
+.editorconfig
