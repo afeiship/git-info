@@ -1,8 +1,9 @@
 var info = require("../lib");
 
-test("basic info test", () => {
+test("get item value", () => {
   expect(info.email()).toBe("1290657123@qq.com");
   expect(info.username()).toBe("afeiship");
+  expect(info.url()).toBe("git@github.com:afeiship/git-info.git");
 });
 
 test("get all infomation", () => {

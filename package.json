@@ -8,7 +8,6 @@
     "email": "1290657123@qq.com"
   },
   "scripts": {
-    "build": "gulp",
     "test": "jest",
     "release": "release-it"
   },
