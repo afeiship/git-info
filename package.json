@@ -1,6 +1,6 @@
 {
   "name": "@jswork/git-info",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Get git infomation.",
   "homepage": "https://github.com/afeiship/git-info",
   "author": {
@@ -19,6 +19,6 @@
   },
   "devDependencies": {
     "jest": "^28.0.1",
-    "release-it": "^14.4.1"
+    "release-it": "^14.14.3"
   }
 }
